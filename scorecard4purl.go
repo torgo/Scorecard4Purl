@@ -16,7 +16,6 @@ type Package struct {
 	Description   string `json:"description"`
 	Homepage      string `json:"homepage"`
 	RepositoryURL string `json:"repository_url"`
-	// Include other fields you need from the API response
 }
 
 type ScorecardCheck struct {
