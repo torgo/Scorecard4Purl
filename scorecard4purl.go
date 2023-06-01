@@ -50,7 +50,7 @@ func main() {
 
 	purl := os.Args[1]
 
-	// Step 1: Retrieve the GitHub URL from Ecosyste.ms API
+	// Step 1: Retrieve the GitHub URL from Ecosyste.ms API (and output it)
 	githubURL, err := getGitHubURL(purl)
 	if err != nil {
 		log.Fatal("Failed to retrieve GitHub URL:", err)
@@ -64,6 +64,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Step 3: Output the results
 	result, err := getScorecard(platform, org, repo)
 	if err != nil {
 		log.Fatal(err)
