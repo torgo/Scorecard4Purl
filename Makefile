@@ -1,5 +1,6 @@
 .PHONY: build run clean
 
+
 # Build the executable
 build:
 	go build -o scorecard4purl scorecard4purl.go
